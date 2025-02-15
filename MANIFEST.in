@@ -1,0 +1,16 @@
+include README.txt
+include LICENSE.txt
+include Code_of_conduct.md
+
+recursive-include pyPhysumber *.py
+recursive-include pyPhysumber *.so *.dll *.dylib
+
+global-exclude __pycache__ *.pyc *.pyo *.pyd .DS_Store .gitignore .gitattributes
+prune tests
+prune docs
+prune examples
+prune .github
+prune CHANGELOG.txt
+prune build
+prune dist
+prune *.egg-info
