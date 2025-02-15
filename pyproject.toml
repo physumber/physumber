@@ -15,7 +15,7 @@ maintainers = [
 ]
 description = "Python library in computing Mathematics and Physics expressions"
 readme = {file = "README.txt", content-type = "text/markdown"}
-license = "AGPL-3.0-or-later"
+license = { file = "LICENSE.txt" }
 keywords = ["Physics", "Mathematics", "B-Consortium", "Computation"]
 classifiers = [
   "Development Status :: 1 - Planning",
