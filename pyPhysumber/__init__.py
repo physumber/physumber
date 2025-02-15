@@ -1,27 +1,40 @@
 """
-Physumber's entry point
+Physumber's entry point.
 """
 
 import logging
 import importlib
 
-__version__ = "0.1.0"
+__version__ = "2025.0.0a1"
 
 # Logging setup
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
 )
-logger = logging.getLogger("pyPhysumber")
-logger.info("Initializing Physumber...")
+LOGGER = logging.getLogger(__name__)
+LOGGER.info("Initializing Physumber...")
 
-# Lazy Import Function
+
 def lazy_import(module_name):
+    """
+    Lazily imports a module.
+
+    Args:
+        module_name (str): The name of the module to import.
+
+    Returns:
+        module: The imported module.
+
+    Raises:
+        ImportError: If the module cannot be imported.
+    """
     try:
         return importlib.import_module(module_name)
-    except ImportError as e:
-        logger.error(f"Failed to import {module_name}: {e}")
-        raise ImportError(f"Module {module_name} could not be loaded.")
+    except ImportError as err:
+        LOGGER.error("Failed to import %s: %s", module_name, err)
+        raise ImportError(f"Module {module_name} could not be loaded.") from err
 
-# Placeholder for configuration (until load_config is implemented)
-config = None
+
+# Placeholder for future configuration loading
+CONFIG = None
