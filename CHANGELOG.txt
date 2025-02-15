@@ -1,0 +1,15 @@
+CHANGELOG
+=========
+
+The following historic document was formed on 15 February 2025 and is intended to document
+all historic changes to B Consortium's first externally managed asset. 
+
+2025.0.0a1
+----------
+
+15 February 2025 -
+  
+  - Planning stage aiming to bring in goals
+  - Documentation plans for B-Consortium
+
+Aitzaz. X
