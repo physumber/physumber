@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyPhysumber"
+version = "2025.0.0a1"
+dependencies = []
+requires-python = ">= 3.9"
+authors = [
+  {name = "Aitzaz Imtiaz", email = "aitzazimtiaz.ai@gmail.com"}
+]
+maintainers = [
+  {name = "Aitzaz Imtiaz", email = "aitzazimtiaz.ai@gmail.com"}
+]
+description = "Python library in computing Mathematics and Physics expressions"
+readme = {file = "README.txt", content-type = "text/markdown"}
+license = "AGPL-3.0-or-later"
+license-files = ["LICENSE.txt", "Code_of_conduct.md"]
+keywords = ["Physics", "Mathematics", "B-Consortium", "Computation"]
+classifiers = [
+  Development Status :: 1 - Planning,
+  Environment :: Other Environment,
+  Intended Audience :: Developers,
+  Intended Audience :: Education,
+  Intended Audience :: Science/Research,
+  License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+),
+  Natural Language :: English,
+  Programming Language :: Python,
+  Topic :: Education,
+  Topic :: Scientific/Engineering :: Mathematics,
+  Topic :: Scientific/Engineering :: Physics
+]
+
+[project.urls]
+Repository = "https://github.com/physumber/pyPhysumber.git"
+Issues = "https://github.com/physumber/pyPhysumber/issues"
+Changelog = "https://github.com/physumber/pyPhysumber/blob/master/CHANGELOG.txt"
+
+[project.scripts]
+"sumber-info" = "sumber:help"
