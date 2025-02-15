@@ -1,11 +1,14 @@
 """
-Initialization file for test suite.
+Test suite for physumber
 """
 
-import logging  
-import pytest
-import physumber.sumbermath
-import physumber.sumberphysics
 
-# Set up logging for test runs
-logging.basicConfig(level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s")
+import sys
+import os
+
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+import logging
+import pytest  # Now should work
+import physumber.sumbermath  # Now should work
+import physumber.sumberphysics  # Now should work
