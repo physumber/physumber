@@ -3,7 +3,7 @@ requires = ["setuptools >= 61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pyPhysumber"
+name = "pyphysumber"
 version = "2025.0.0a1"
 dependencies = []
 requires-python = ">= 3.9"
@@ -41,5 +41,5 @@ Changelog = "https://github.com/physumber/pyPhysumber/blob/master/CHANGELOG.txt"
 "sumber-info" = "sumber:help"
 
 [tool.setuptools]
-package-dir = {physumber = "pyPhysumber"}
+package-dir = {physumber = "pyphysumber"}
 packages = ["physumber"]
