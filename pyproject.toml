@@ -19,17 +19,17 @@ license = "AGPL-3.0-or-later"
 license-files = ["LICENSE.txt", "Code_of_conduct.md"]
 keywords = ["Physics", "Mathematics", "B-Consortium", "Computation"]
 classifiers = [
-  Development Status :: 1 - Planning,
-  Environment :: Other Environment,
-  Intended Audience :: Developers,
-  Intended Audience :: Education,
-  Intended Audience :: Science/Research,
-  License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+),
-  Natural Language :: English,
-  Programming Language :: Python,
-  Topic :: Education,
-  Topic :: Scientific/Engineering :: Mathematics,
-  Topic :: Scientific/Engineering :: Physics
+  "Development Status :: 1 - Planning",
+  "Environment :: Other Environment",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Education",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+  "Natural Language :: English",
+  "Programming Language :: Python",
+  "Topic :: Education",
+  "Topic :: Scientific/Engineering :: Mathematics",
+  "Topic :: Scientific/Engineering :: Physics",
 ]
 
 [project.urls]
@@ -39,3 +39,7 @@ Changelog = "https://github.com/physumber/pyPhysumber/blob/master/CHANGELOG.txt"
 
 [project.scripts]
 "sumber-info" = "sumber:help"
+
+[tool.setuptools]
+package-dir = {physumber = "pyPhysumber"}
+packages = ["physumber"]
