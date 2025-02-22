@@ -37,3 +37,6 @@ Changelog = "https://github.com/physumber/pyPhysumber/blob/master/CHANGELOG.txt"
 
 [project.scripts]
 "sumber-info" = "physumber:help" 
+
+[tool.setuptools]
+packages = ["physumber"]
