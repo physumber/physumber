@@ -38,5 +38,5 @@ Changelog = "https://github.com/physumber/physumber/blob/master/CHANGELOG.txt"
 [project.scripts]
 "sumber-info" = "physumber:help" 
 
-[tool.setuptools]
-packages = ["physumber"]
+[tool.setuptools.packages.find]
+where = ["."]
