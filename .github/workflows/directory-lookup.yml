@@ -1,2 +1,13 @@
-- name: Debug Directory Structure
-  run: ls -R
+name: Debug Directory Lookup
+
+on: [push, pull_request]
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Debug Directory Structure
+        run: ls -R
