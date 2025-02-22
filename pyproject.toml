@@ -45,3 +45,7 @@ Changelog = "https://github.com/physumber/pyPhysumber/blob/master/CHANGELOG.txt"
 [tool.setuptools]
 package-dir = {physumber = "pyphysumber"}
 packages = ["physumber"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pyphysumber*"]
