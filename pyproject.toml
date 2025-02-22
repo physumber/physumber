@@ -5,21 +5,17 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "physumber"
 version = "2025.0.0a1"
-dependencies = [
-  "logging",
-  "importlib"
-]
-requires-python = ">= 3.9"
-authors = [
-  {name = "Aitzaz Imtiaz", email = "aitzazimtiaz.ai@gmail.com"}
-]
-maintainers = [
-  {name = "Aitzaz Imtiaz", email = "aitzazimtiaz.ai@gmail.com"}
-]
-description = "Python library in computing Mathematics and Physics expressions"
-readme = {file = "README.txt", content-type = "text/markdown"}
+dependencies = []  # Removed standard library modules
+requires-python = ">=3.9"
+
+authors = [{ name = "Aitzaz Imtiaz", email = "aitzazimtiaz.ai@gmail.com" }]
+maintainers = [{ name = "Aitzaz Imtiaz", email = "aitzazimtiaz.ai@gmail.com" }]
+
+description = "Python library for computing Mathematics and Physics expressions"
+readme = { file = "README.txt", content-type = "text/plain" } 
 license = { file = "LICENSE.txt" }
 keywords = ["Physics", "Mathematics", "B-Consortium", "Computation"]
+
 classifiers = [
   "Development Status :: 1 - Planning",
   "Environment :: Other Environment",
@@ -40,4 +36,4 @@ Issues = "https://github.com/physumber/pyPhysumber/issues"
 Changelog = "https://github.com/physumber/pyPhysumber/blob/master/CHANGELOG.txt"
 
 [project.scripts]
-"sumber-info" = "sumber:help"
+"sumber-info" = "physumber:help" 
