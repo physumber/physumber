@@ -4,8 +4,11 @@ Physumber's entry point.
 
 import logging
 import importlib
+import sys
 from .sumbermath import *
 from .sumberphysics import *
+
+sys.modules["physumber"] = pyphysumber
 
 __version__ = "2025.0.0a1"
 __all__ = ["sumbermath", "sumberphysics"]
