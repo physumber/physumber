@@ -42,6 +42,6 @@ Changelog = "https://github.com/physumber/pyPhysumber/blob/master/CHANGELOG.txt"
 [project.scripts]
 "sumber-info" = "sumber:help"
 
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["pyphysumber*"]
+[tool.setuptools]
+package-dir = {physumber = "pyphysumber"}
+packages = ["physumber"] 
