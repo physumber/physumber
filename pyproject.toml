@@ -34,9 +34,3 @@ classifiers = [
 Repository = "https://github.com/physumber/physumber.git"
 Issues = "https://github.com/physumber/physumber/issues"
 Changelog = "https://github.com/physumber/physumber/blob/master/CHANGELOG.txt"
-
-[project.scripts]
-"sumber-info" = "physumber:help" 
-
-[tool.setuptools.packages.find]
-where = ["."]
