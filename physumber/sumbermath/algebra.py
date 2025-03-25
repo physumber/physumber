@@ -1,6 +1,6 @@
 class algebra:
-  def __init__():
+  def __init__(self):
     pass
     
-  def modulus(x):
+  def modulus(self, x):
     return abs(x)
