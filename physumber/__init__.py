@@ -4,8 +4,6 @@ Physumber's entry point.
 
 import logging
 import importlib
-from .sumbermath import *
-from .sumberphysics import *
 
 __version__ = "2025.0.0a1"
 __all__ = ["sumbermath", "sumberphysics"]
@@ -17,6 +15,7 @@ logging.basicConfig(
 )
 LOGGER = logging.getLogger(__name__)
 LOGGER.info("Initializing Physumber...")
+
 
 
 def lazy_import(module_name):
