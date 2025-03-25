@@ -1,5 +1,5 @@
 import unittest
-from physumber.sumbermath.algebra import Algebra
+from physumber.sumbermath.algebra import algebra
 
 class TestAlgebra(unittest.TestCase):
     def test_modulus(self):
